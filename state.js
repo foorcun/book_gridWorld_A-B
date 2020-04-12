@@ -2,23 +2,23 @@ class State {
     constructor(no) {
       this.no = no;
 
-
+      this.value=1;
 
 
     }
-    actionNorth(newState) {
+    actionNorth(newState,reward) {
       return newState;
     }
 
-    actionSouth(newState) {
-        return newState;
+    actionSouth(newState,reward) {
+        return newState,reward;
       }
 
-      actionEast(newState) {
-        return newState;
+      actionEast(newState,reward) {
+        return newState,reward;
       }
 
-      actionWest(newState) {
-        return newState;
+      actionWest(newState,reward) {
+        return newState,reward;
       }
   }
